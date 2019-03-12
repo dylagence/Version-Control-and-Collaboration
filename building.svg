@@ -1,6 +1,36 @@
 
 <svg id="polygon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
   <title>sketch</title>
+  <style>
+      rect,circle,line {
+        fill:white;
+        stroke: white;
+        animation: draw2 6s forwards;
+      }
+      path {
+        animation: draw 4s forwards;
+        stroke: white;
+        stroke-width: 3px;
+        stroke-dasharray: 6000;
+        stroke-dashoffset: 6000;
+        fill: white;
+      }
+
+      @keyframes draw {
+        to {
+          stroke-dashoffset: 0;
+          stroke: blue;
+          fill: yellow;
+        }
+      }
+
+      @keyframes draw2 {
+        to {
+          fill: red;
+          stroke: red;
+        }
+      }
+    </style>
    <path d= "
   M 420 490
   H 490
@@ -28,7 +58,7 @@
   <path d= "
   M 460 190
   l -230 190
-  l 160 120 
+  l 160 120
   h 30
   l -160 -120
   L 490 190"
@@ -82,7 +112,7 @@
     l 153 115
     h -8
     l -148 -110
-    h -10  
+    h -10
 
     l -140 110
     z"

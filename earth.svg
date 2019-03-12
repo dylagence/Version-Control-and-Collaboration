@@ -3,6 +3,30 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+<style>
+	path {
+		animation: draw 1s;
+		fill: lightblue;
+		animation-iteration-count: 1000;
+		animation-direct: alternate;
+		animation-timing-function: ease;
+		aimation-delay: 2s;
+	}
+
+	@keyframes draw {
+		from {
+			transform: scale3d(1,1,1);
+			fill: blue;
+		}
+		50% {
+			transform: scale3d(1.05,1.05,1.05);
+		}
+		to {
+			transform: scale3d(1,1,1);
+			fill: lightgreen;
+		}
+	}
+</style>
 <g>
 	<g>
 		<path fill="#FFFFFF" d="M120.999,97.096l-36.68,42.63C94.999,124.235,107.318,109.945,120.999,97.096z"/>
@@ -38,8 +62,8 @@
 	</g>
 	<g>
 		<path fill="#FFFFFF" d="M84.318,139.726c-0.07,0.07-0.12,0.15-0.16,0.22l0.06-0.11L84.318,139.726z"/>
-		<polygon points="86.793,142.201 85.822,141.23 84.831,140.369 81.082,138.277 81.344,137.793 81.631,137.479 81.631,137.479 
-			81.843,137.251 84.988,140.254 87.294,141.504 87.235,141.614 85.333,140.583 85.5,140.742 85.473,140.727 86.961,142.016 
+		<polygon points="86.793,142.201 85.822,141.23 84.831,140.369 81.082,138.277 81.344,137.793 81.631,137.479 81.631,137.479
+			81.843,137.251 84.988,140.254 87.294,141.504 87.235,141.614 85.333,140.583 85.5,140.742 85.473,140.727 86.961,142.016
 			85.961,141.183 86.905,142.083 85.32,140.728 85.332,140.74 86.86,142.132 85.822,141.23 		"/>
 	</g>
 	<g>
